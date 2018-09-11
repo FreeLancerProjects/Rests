@@ -16,5 +16,6 @@ public class Login extends AppCompatActivity {
         Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"JannaLT-Regular.ttf",true);
 
+
     }
 }
