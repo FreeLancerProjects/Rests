@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Rests</string>
-    <string name="login">login</string>
-    <string name="username">username</string>
-    <string name="password_login">password</string>
+    <string name="login">Sign in</string>
+    <string name="username">Username</string>
+    <string name="password_login">Password</string>
+    <string name="or">or</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

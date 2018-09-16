@@ -1,7 +1,9 @@
-package com.semicolon.rests;
+package com.semicolon.rests.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.semicolon.rests.R;
 
 public class MainActivity extends AppCompatActivity {
 

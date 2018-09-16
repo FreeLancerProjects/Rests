@@ -1,11 +1,9 @@
-package com.semicolon.rests;
+package com.semicolon.rests.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 import com.semicolon.rests.R;
-
-import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class Login extends AppCompatActivity {
 
@@ -13,9 +11,9 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Calligrapher calligrapher=new Calligrapher(this);
+        /*Calligrapher calligrapher=new Calligrapher(this);
         calligrapher.setFont(this,"JannaLT-Regular.ttf",true);
-
+*/
 
     }
 }
