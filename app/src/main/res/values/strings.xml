@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Rests</string>
     <string name="login">Sign in</string>
-    <string name="username">Username</string>
+    <string name="username">Phone number or email</string>
     <string name="password_login">Password</string>
     <string name="or">or</string>
     <string name="sign_up">Sign Up</string>
+    <string name="phone_number">Phone number</string>
+    <string name="email">Email</string>
+    <string name="city">City</string>
 </resources>
