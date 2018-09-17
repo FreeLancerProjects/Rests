@@ -161,8 +161,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void setItemCity(CityModel cityModel)
     {
-        //tv_city.setText(cityModel.);
-        //city_id=cityModel.
+        tv_city.setText(cityModel.getCity_title());
+        city_id=cityModel.getCity_id();
         city_alert.dismiss();
 
     }
@@ -170,6 +170,7 @@ public class RegisterActivity extends AppCompatActivity {
         String m_name = edt_name.getText().toString();
         String m_phone = edt_phone.getText().toString();
         String m_email = edt_email.getText().toString();
+        String m_city = tv_city.getText().toString();
         String m_password = edt_password.getText().toString();
         if (!m_phone.startsWith("+"))
         {
@@ -178,7 +179,7 @@ public class RegisterActivity extends AppCompatActivity {
         edt_check_phone.setPhoneNumber(m_phone);
 
         //متنساش تحط المدينة وتعمل عليها اتشك
-        if (!TextUtils.isEmpty(m_name)&&!TextUtils.isEmpty(m_phone)&&edt_check_phone.isValid()&&!TextUtils.isEmpty(m_password)&&m_password.length()>=5)
+        if (!TextUtils.isEmpty(m_name)&&!TextUtils.isEmpty(m_phone)&&edt_check_phone.isValid()&&!TextUtils.isEmpty(m_city)&&!TextUtils.isEmpty(m_password)&&m_password.length()>=5)
         {
             if (TextUtils.isEmpty(m_email))
             {
@@ -245,14 +246,14 @@ public class RegisterActivity extends AppCompatActivity {
                         }
                 }
 
-                /*if (TextUtils.isEmpty(city_id))
+                if (TextUtils.isEmpty(city_id))
                 {
                     tv_city.setError("City is required");
                 }else
                     {
                         tv_city.setError(null);
 
-                    }*/
+                    }
                 if (TextUtils.isEmpty(m_password))
                 {
                     edt_password.setError("Password is required");

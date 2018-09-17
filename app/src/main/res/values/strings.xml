@@ -10,5 +10,14 @@
     <string name="city">City</string>
     <string name="name">Name</string>
     <string name="somthing_error">Error :something went haywire try again later.</string>
+    <string name="Rests">استراحات</string>
+    <string name="main">الرئيسية</string>
+    <string name="orders">حجوزاتى</string>
+    <string name="profile">الصفحة الشخصية</string>
+    <string name="offers">العروض</string>
+    <string name="others">المزيد</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

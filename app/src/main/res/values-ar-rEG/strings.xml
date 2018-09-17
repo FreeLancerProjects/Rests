@@ -12,5 +12,11 @@
     <string name="city">المدينة</string>
     <string name="name">الاسم</string>
     <string name="somthing_error">خطأ حاول مره اخرى لا حقا</string>
+    <string name="Rests">استراحات</string>
+    <string name="main">الرئيسية</string>
+    <string name="orders">حجوزاتى</string>
+    <string name="profile">الصفحة الشخصية</string>
+    <string name="offers">العروض</string>
+    <string name="others">المزيد</string>
 
 </resources>

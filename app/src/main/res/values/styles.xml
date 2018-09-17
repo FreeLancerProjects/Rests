@@ -18,4 +18,6 @@
         <item name="android:windowEnterAnimation">@anim/enter_from_top</item>
         <item name="android:windowExitAnimation">@anim/exit_to_top</item>
     </style>
+
+
 </resources>

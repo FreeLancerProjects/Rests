@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 
 public interface Services {
 
-    @GET("")
+    @GET("AppUser/Cites")
     Call<List<CityModel>> getCity();
 }

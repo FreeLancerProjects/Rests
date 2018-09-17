@@ -70,7 +70,7 @@ public class CityAdapter extends RecyclerView.Adapter <CityAdapter.MyHolder>{
 
         public void BindData(CityModel cityModel)
         {
-            //tv_title.setText(cityModel.);
+            tv_title.setText(cityModel.getCity_title());
         }
     }
 }

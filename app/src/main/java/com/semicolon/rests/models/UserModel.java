@@ -78,4 +78,5 @@ public class UserModel implements Serializable {
     public int getSuccess_signup() {
         return success_signup;
     }
+
 }
