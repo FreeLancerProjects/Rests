@@ -163,6 +163,7 @@
                     android:drawablePadding="10dp"
                     android:background="@drawable/ed_bg"
                     android:layout_marginBottom="5dp"
+                    android:paddingRight="10dp"
                     />
 
                 <android.support.design.widget.TextInputLayout
@@ -212,35 +213,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/ll_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:layout_gravity="left"
-            android:orientation="horizontal"
-            android:layout_margin="15dp"
-
-            >
-            <ImageView
-                android:id="@+id/image_back"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/login_back"
-                android:padding="6dp"
-                android:clickable="false"
-                android:longClickable="false"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="@string/login"
-                android:textAllCaps="true"
-                android:clickable="false"
-                android:longClickable="false"
-                />
-        </LinearLayout>
 
     </FrameLayout>
 </ScrollView>

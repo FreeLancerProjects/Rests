@@ -2,6 +2,7 @@ package com.semicolon.rests.adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.semicolon.rests.R;
-import com.semicolon.rests.activities.RegisterActivity;
+import com.semicolon.rests.fragments.Fragment_Register;
 import com.semicolon.rests.models.CityModel;
 
 import java.util.List;
@@ -19,12 +20,12 @@ public class CityAdapter extends RecyclerView.Adapter <CityAdapter.MyHolder>{
 
     private Context context;
     private List<CityModel> cityModelList;
-    private RegisterActivity activity;
+    private Fragment_Register fragment;
     private int lastSelectedPos=-1;
 
-    public CityAdapter(Context context, List<CityModel> cityModelList) {
+    public CityAdapter(Context context, List<CityModel> cityModelList, Fragment fragment) {
         this.context = context;
-        this.activity = (RegisterActivity) context;
+        this.fragment = (Fragment_Register) fragment;
         this.cityModelList = cityModelList;
     }
 
@@ -43,10 +44,15 @@ public class CityAdapter extends RecyclerView.Adapter <CityAdapter.MyHolder>{
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (cityModelList.size()>0)
+                {
+                    CityModel cityModel = cityModelList.get(holder.getAdapterPosition());
+                    fragment.setItemCity(cityModel);
+                }
+
                 lastSelectedPos = holder.getAdapterPosition();
                 notifyDataSetChanged();
-                CityModel cityModel = cityModelList.get(holder.getAdapterPosition());
-                activity.setItemCity(cityModel);
+
 
             }
         });

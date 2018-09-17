@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/bottom_sheet_image_back"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_arrow"
+            android:padding="18dp"
+
+            />
+        <TextView
+            android:id="@+id/bottom_sheet_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragment_authentication_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </FrameLayout>
+</LinearLayout>

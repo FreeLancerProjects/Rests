@@ -9,15 +9,13 @@
     <string name="email">Email</string>
     <string name="city">City</string>
     <string name="name">Name</string>
-    <string name="somthing_error">Error :something went haywire try again later.</string>
-    <string name="Rests">استراحات</string>
-    <string name="main">الرئيسية</string>
-    <string name="orders">حجوزاتى</string>
-    <string name="profile">الصفحة الشخصية</string>
-    <string name="offers">العروض</string>
-    <string name="others">المزيد</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="something_error">Error :something went haywire try again later.</string>
+    <string name="profile">PROFILE</string>
+    <string name="reserv">RESERVATIONS</string>
+    <string name="home">HOME</string>
+    <string name="more">MORE</string>
+    <string name="sign_in_or_create_a_new_account_to_view_your_reservations">Sign in or create a new account to view your reservations.</string>
+    <string name="close">Close</string>
+    <string name="notification">Notification</string>
 
 </resources>

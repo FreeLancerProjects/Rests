@@ -4,7 +4,7 @@ import com.semicolon.rests.models.UserModel;
 
 public class UserSingleTone {
     private static UserSingleTone instance=null;
-    private UserModel userModel;
+    private UserModel userModel=null;
     private UserSingleTone() {
     }
 

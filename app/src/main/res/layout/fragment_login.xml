@@ -123,26 +123,8 @@
             android:textStyle="bold"
             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:text="@string/or"
-            />
 
-        <TextView
-            android:id="@+id/tv_signup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_gravity="center_horizontal"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:text="@string/sign_up"
-            />
+
     </LinearLayout>
 
 </ScrollView>
