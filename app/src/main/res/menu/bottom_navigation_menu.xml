@@ -18,6 +18,6 @@
 
     <item
         android:title="@string/others"
-        android:icon="@drawable/other_ic" />
+        android:icon="@drawable/others_ic" />
 
 </menu>
