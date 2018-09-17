@@ -48,6 +48,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private void initView() {
         userSingleTone = UserSingleTone.getInstance();
+        userModel = userSingleTone.getUserModel();
         image_back = findViewById(R.id.image_back);
         tv_title = findViewById(R.id.tv_title);
 
@@ -71,9 +72,20 @@ public class HomeActivity extends AppCompatActivity {
          item3 = new AHBottomNavigationItem(getString(R.string.profile),R.drawable.profile_icon,R.color.gray6);
          item4 = new AHBottomNavigationItem(getString(R.string.more),R.drawable.more_icon,R.color.gray6);
 
-        AddNavItem(item1);
-        AddNavItem(item2);
-        AddNavItem(item4);
+
+         if (userModel==null)
+         {
+             AddNavItem(item1);
+             AddNavItem(item2);
+             AddNavItem(item4);
+         }else
+             {
+                 AddNavItem(item1);
+                 AddNavItem(item2);
+                 AddNavItem(item3);
+                 AddNavItem(item4);
+             }
+
 
         ahBottomNavigation.setCurrentItem(0,false);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Fragment_Home.getInstance()).commit();
@@ -148,7 +160,6 @@ public class HomeActivity extends AppCompatActivity {
                         else if (position==2)
                         {
                             UpdateTitle(getString(R.string.more));
-
                             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, Fragment_More.getInstance()).commit();
                             ahBottomNavigation.setCurrentItem(position,false);
 
@@ -199,7 +210,12 @@ public class HomeActivity extends AppCompatActivity {
 
 
     public void UpdateUi(UserModel userModel) {
+        ahBottomNavigation.removeAllItems();
+        AddNavItem(item1);
+        AddNavItem(item2);
         AddNavItem(item3);
+        AddNavItem(item4);
+
     }
     private void UpdateTitle(String title)
     {
