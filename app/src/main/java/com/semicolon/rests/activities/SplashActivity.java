@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import com.semicolon.rests.R;
 
-public class Splash extends AppCompatActivity implements Animation.AnimationListener {
+public class SplashActivity extends AppCompatActivity implements Animation.AnimationListener {
 
     ImageView logo;
     TextView name;
@@ -29,8 +29,7 @@ public class Splash extends AppCompatActivity implements Animation.AnimationList
 
         animFadein.setAnimationListener(this);
 
-        logo.setVisibility(View.VISIBLE);
-        name.setVisibility(View.VISIBLE);
+
         logo.startAnimation(animFadein);
         name.startAnimation(animFadein);
 
@@ -39,14 +38,17 @@ public class Splash extends AppCompatActivity implements Animation.AnimationList
 
     @Override
     public void onAnimationStart(Animation animation) {
-
+        logo.setVisibility(View.VISIBLE);
+        name.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void onAnimationEnd(Animation animation) {
 
-        Intent intent=new Intent(Splash.this,Login.class);
-        startActivity(intent);    }
+        Intent intent=new Intent(SplashActivity.this,LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
     @Override
     public void onAnimationRepeat(Animation animation) {

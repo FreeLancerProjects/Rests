@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="5dp"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_weight="1.75"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:paddingStart="15sp"
+        android:clickable="false"
+        android:longClickable="false"
+        />
+    <RadioButton
+        android:id="@+id/rb"
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:button="@drawable/rb_bg"
+        android:clickable="false"
+        android:longClickable="false"
+        />
+</LinearLayout>

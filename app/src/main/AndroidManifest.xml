@@ -9,16 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.Splash">
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.Register" />
-        <activity android:name=".activities.Login"></activity>
+        <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.RegisterActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/login_register_style"
+            />
+        <activity android:name=".activities.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:theme="@style/login_register_style"
+
+            />
     </application>
 
 </manifest>

@@ -47,7 +47,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ll_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -55,20 +54,22 @@
                 android:paddingRight="20dp"
                 android:layout_marginTop="30dp"
                 >
-                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:fletPaddingBottom="10dp"
-                    app:fletPaddingTop="5dp"
                     android:background="@drawable/ed_bg"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    android:hint="@string/name"
+                    android:textColorHint="@color/white"
                     android:layout_marginBottom="5dp"
+                    android:paddingTop="8dp"
+
                     >
                     <EditText
                         android:id="@+id/edt_name"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Name"
-                        android:shadowColor="@color/white"
+                        android:layout_height="42dp"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
                         android:textSize="13sp"
@@ -79,26 +80,28 @@
                         android:drawablePadding="5dp"
                         android:background="@color/transparent"
                         />
-                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </android.support.design.widget.TextInputLayout>
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
 
                     >
-                    <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                    <android.support.design.widget.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:fletPaddingBottom="10dp"
-                        app:fletPaddingTop="5dp"
                         android:background="@drawable/ed_bg"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true"
+                        android:hint="@string/phone_number"
+                        android:textColorHint="@color/white"
+                        android:paddingTop="8dp"
 
                         >
                         <EditText
                             android:id="@+id/edt_phone"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="@string/phone_number"
+                            android:layout_height="42dp"
                             android:shadowColor="@color/white"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
@@ -111,7 +114,7 @@
                             android:background="@color/transparent"
                             android:inputType="phone"
                             />
-                    </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                    </android.support.design.widget.TextInputLayout>
                     <com.lamudi.phonefield.PhoneInputLayout
                         android:id="@+id/edt_check_phone"
                         android:layout_width="match_parent"
@@ -121,20 +124,22 @@
 
                     </com.lamudi.phonefield.PhoneInputLayout>
                 </FrameLayout>
-                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:fletPaddingBottom="10dp"
-                    app:fletPaddingTop="5dp"
                     android:background="@drawable/ed_bg"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    android:hint="@string/email"
+                    android:textColorHint="@color/white"
                     android:layout_marginBottom="5dp"
+                    android:paddingTop="8dp"
+
                     >
                     <EditText
                         android:id="@+id/edt_email"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/email"
-                        android:shadowColor="@color/white"
+                        android:layout_height="42dp"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
                         android:textSize="13sp"
@@ -146,41 +151,37 @@
                         android:background="@color/transparent"
                         android:inputType="textEmailAddress"
                         />
-                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
-                <com.wrapp.floatlabelededittext.FloatLabeledEditText
-                    android:id="@+id/edt_city"
+                </android.support.design.widget.TextInputLayout>
+                <TextView
+                    android:id="@+id/tv_city"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:fletPaddingBottom="10dp"
-                    app:fletPaddingTop="5dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/map_icon"
+                    android:text="@string/city"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="10dp"
                     android:background="@drawable/ed_bg"
                     android:layout_marginBottom="5dp"
-                    >
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:textColor="@color/white"
-                        android:drawableStart="@drawable/map_icon"
-                        android:text="@string/city"
-                        android:gravity="center_vertical"
-                        android:drawablePadding="10dp"
-                        />
-                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                    />
 
-                <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:fletPaddingBottom="10dp"
-                    app:fletPaddingTop="5dp"
-                    android:layout_marginTop="5dp"
                     android:background="@drawable/ed_bg"
+                    app:hintAnimationEnabled="true"
+                    app:hintEnabled="true"
+                    android:hint="@string/password_login"
+                    android:textColorHint="@color/white"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/white"
+                    android:paddingTop="8dp"
 
                     >
                     <EditText
                         android:id="@+id/edt_password"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/password_login"
+                        android:layout_height="42dp"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
                         android:textSize="15sp"
@@ -192,18 +193,10 @@
                         android:drawablePadding="5dp"
                         android:background="@color/transparent"
                         />
-                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                </android.support.design.widget.TextInputLayout>
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                >
                 <Button
-                    android:id="@+id/btn_login"
+                    android:id="@+id/btn_signup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -211,38 +204,43 @@
                     android:layout_marginTop="30dp"
                     android:textColor="@color/white"
                     android:text="@string/sign_up"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/white"
                     android:textSize="15sp"
-                    android:text="@string/or"
-                    />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:layout_gravity="center_horizontal"
-                    android:textColor="@color/white"
-                    android:textSize="17sp"
-                    android:text="@string/login"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
                     />
             </LinearLayout>
+
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/image_back"
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/back_arrow"
-            android:padding="20dp"
-            />
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="left"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+
+            >
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/login_back"
+                android:padding="6dp"
+                android:clickable="false"
+                android:longClickable="false"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:clickable="false"
+                android:longClickable="false"
+                />
+        </LinearLayout>
+
     </FrameLayout>
 </ScrollView>

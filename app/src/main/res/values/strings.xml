@@ -8,5 +8,7 @@
     <string name="phone_number">Phone number</string>
     <string name="email">Email</string>
     <string name="city">City</string>
+    <string name="name">Name</string>
+    <string name="somthing_error">Error :something went haywire try again later.</string>
 
 </resources>

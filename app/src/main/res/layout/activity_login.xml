@@ -1,164 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     android:fillViewport="true"
     android:background="@drawable/background"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         >
 
-        <LinearLayout
-            android:id="@+id/ll_logo"
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/color"
+            android:textSize="20sp"
+            android:text="استراحات المملكة"
+            android:layout_marginBottom="70dp"
+            />
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            android:gravity="center"
-            >
-            <ImageView
-                android:layout_marginTop="20dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/logo"
-                android:scaleType="centerCrop"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="إستراحات المملكة"
-                android:textColor="@color/notf"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
 
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_login"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_centerInParent="true"
             >
-            <FrameLayout
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                >
-                <com.wrapp.floatlabelededittext.FloatLabeledEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:fletPaddingBottom="10dp"
-                    app:fletPaddingTop="5dp"
-                    android:background="@drawable/ed_bg"
-
-                    >
-                    <EditText
-                        android:id="@+id/edt_email"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/username"
-                        android:shadowColor="@color/white"
-                        android:paddingLeft="5dp"
-                        android:paddingRight="5dp"
-                        android:textSize="13sp"
-                        android:textColor="@color/white"
-                        android:textColorHint="@color/white"
-                        android:drawableStart="@drawable/user_name_icon"
-                        android:singleLine="true"
-                        android:drawablePadding="5dp"
-                        android:background="@color/transparent"
-                        android:inputType="textEmailAddress"
-                        />
-                </com.wrapp.floatlabelededittext.FloatLabeledEditText>
-                <com.lamudi.phonefield.PhoneInputLayout
-                    android:id="@+id/edt_check_phone"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    >
-
-                </com.lamudi.phonefield.PhoneInputLayout>
-            </FrameLayout>
-            <com.wrapp.floatlabelededittext.FloatLabeledEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:fletPaddingBottom="10dp"
-                app:fletPaddingTop="5dp"
-                android:layout_marginTop="5dp"
                 android:background="@drawable/ed_bg"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                android:hint="@string/username"
+                android:textColorHint="@color/white"
+                android:paddingTop="8dp"
+
 
                 >
                 <EditText
-                    android:id="@+id/edt_password"
+                    android:id="@+id/edt_email"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/password_login"
+                    android:layout_height="42dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
                     android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:drawableStart="@drawable/password_icon"
+                    android:drawableStart="@drawable/user_name_icon"
                     android:singleLine="true"
-                    android:inputType="textPassword"
                     android:drawablePadding="5dp"
                     android:background="@color/transparent"
+                    android:inputType="textEmailAddress"
+                    android:gravity="center_vertical"
                     />
-            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:layout_below="@id/ll_login"
-            >
-            <Button
-                android:id="@+id/btn_login"
+            </android.support.design.widget.TextInputLayout>
+            <com.lamudi.phonefield.PhoneInputLayout
+                android:id="@+id/edt_check_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/login_btn"
-                android:layout_marginTop="30dp"
-                android:textColor="@color/white"
-                android:text="@string/login"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                />
+                android:visibility="gone"
+                >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_gravity="center_horizontal"
-                android:textColor="@color/white"
+            </com.lamudi.phonefield.PhoneInputLayout>
+        </FrameLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ed_bg"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            android:hint="@string/password_login"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="5dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            android:paddingTop="8dp"
+
+            >
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
                 android:textSize="15sp"
-                android:text="@string/or"
-                />
-
-            <TextView
-                android:id="@+id/sign_txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_gravity="center_horizontal"
                 android:textColor="@color/white"
-                android:textSize="17sp"
-                android:text="@string/sign_up"
+                android:textColorHint="@color/white"
+                android:drawableStart="@drawable/password_icon"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:drawablePadding="5dp"
+                android:background="@color/transparent"
                 />
-        </LinearLayout>
-    </RelativeLayout>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_btn"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="@string/login"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="@string/or"
+            />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="@string/sign_up"
+            />
+    </LinearLayout>
+
 </ScrollView>
