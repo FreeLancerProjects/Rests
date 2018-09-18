@@ -17,17 +17,18 @@ import com.semicolon.rests.service.Api;
 import java.util.ArrayList;
 import java.util.List;
 
+import fr.castorflex.android.smoothprogressbar.SmoothProgressBar;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class BankActivity extends AppCompatActivity {
     private ImageView image_back;
-
-    ArrayList<BanksModel> model;
-    BanksAdapter adapter;
-    RecyclerView recyclerView;
-    private LinearLayoutManager mLayoutManager;
+    private ArrayList<BanksModel> banksModelArrayList;
+    private BanksAdapter adapter;
+    private RecyclerView recyclerView;
+    private LinearLayoutManager manager;
+    private SmoothProgressBar smoothProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,31 +45,30 @@ public class BankActivity extends AppCompatActivity {
                 finish();
             }
         });
-
+        smoothProgress = findViewById(R.id.smoothProgress);
         recyclerView = findViewById(R.id.recyc_banks);
-        model = new ArrayList<>();
-        mLayoutManager=new LinearLayoutManager(this);
-        mLayoutManager.setReverseLayout(true);
-        mLayoutManager.setStackFromEnd(true);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setHasFixedSize(true);
-
-        adapter = new BanksAdapter(this, model);
+        banksModelArrayList = new ArrayList<>();
+        manager =new LinearLayoutManager(this);
+        manager.setReverseLayout(true);
+        manager.setStackFromEnd(true);
+        recyclerView.setLayoutManager(manager);
+        adapter = new BanksAdapter(this, banksModelArrayList);
         recyclerView.setAdapter(adapter);
         
         getData();
     }
 
     private void getData() {
-
         Api.getServices()
                 .getBanks().enqueue(new Callback<List<BanksModel>>() {
             @Override
             public void onResponse(Call<List<BanksModel>> call, Response<List<BanksModel>> response) {
                 if (response.isSuccessful())
                 {
-                    if (response.body()!=null) {
-                        model.addAll(response.body());
+                    smoothProgress.setVisibility(View.GONE);
+                    if (response.body().size()>0) {
+
+                        banksModelArrayList.addAll(response.body());
                         adapter.notifyDataSetChanged();
                     }
                 }
@@ -76,9 +76,12 @@ public class BankActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<List<BanksModel>> call, Throwable t) {
+                smoothProgress.setVisibility(View.GONE);
                 Log.e("Error",t.getMessage());
                 Toast.makeText(BankActivity.this, R.string.something_error, Toast.LENGTH_SHORT).show();
             }
         });
     }
+
+
 }
