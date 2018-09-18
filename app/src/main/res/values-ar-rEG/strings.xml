@@ -19,5 +19,12 @@
     <string name="sign_in_or_create_a_new_account_to_view_your_reservations">قم بتسجيل الدخول أو إنشاء حساب جديد لتتمكن من مشاهدة الحجوزات.</string>
     <string name="close">إغلاق</string>
     <string name="notification">إشعارات</string>
+    <string name="terms">الشروط والاحكام</string>
+    <string name="bnk">الحسابات البنكية</string>
+    <string name="contact">اتصل بنا</string>
+    <string name="complains">الشكاوي</string>
+    <string name="technical_support">الدعم الفني</string>
+    <string name="subject">الموضوع</string>
+    <string name="message">الرسالة</string>
 
 </resources>

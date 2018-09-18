@@ -17,5 +17,12 @@
     <string name="sign_in_or_create_a_new_account_to_view_your_reservations">Sign in or create a new account to view your reservations.</string>
     <string name="close">Close</string>
     <string name="notification">Notification</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="bnk">Bank accounts</string>
+    <string name="contact">Contact us</string>
+    <string name="complains">Complains</string>
+    <string name="technical_support">Technical support</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
 
 </resources>
