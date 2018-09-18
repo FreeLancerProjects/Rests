@@ -24,5 +24,25 @@
     <string name="technical_support">Technical support</string>
     <string name="subject">Subject</string>
     <string name="message">Message</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="whatsapp">whatsapp</string>
+    <string name="pls_install_wapp">Please install whatsApp.</string>
+    <string name="gmail">Gmail</string>
+    <string name="wait">Wait...</string>
+    <string name="sending">Sending...</string>
+    <string name="send_succ">Successfully sent.</string>
+    <string name="name_req">Name is required</string>
+    <string name="email_req">Email is required</string>
+    <string name="inv_email">Invalid email</string>
+    <string name="subject_req">Subject is required</string>
+    <string name="msg_req">Message is required</string>
+    <string name="phone_email_req">Phone number or email is required</string>
+    <string name="password_req">Password is required</string>
+    <string name="phone_req">Phone number is required</string>
+    <string name="inv_phone">Invalid Phone number</string>
+    <string name="city_req">City is required</string>
+    <string name="pass_short">Password is to short minimum 5 characters</string>
 
 </resources>

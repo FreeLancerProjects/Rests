@@ -174,7 +174,7 @@ public class Fragment_Register extends Fragment {
             {
                 if (!Patterns.EMAIL_ADDRESS.matcher(m_email).matches())
                 {
-                    edt_email.setError("Invalid email");
+                    edt_email.setError(getString(R.string.inv_email));
 
                 }else
                 {
@@ -192,7 +192,7 @@ public class Fragment_Register extends Fragment {
         {
             if (TextUtils.isEmpty(m_name))
             {
-                edt_name.setError("Name is required");
+                edt_name.setError(getString(R.string.name_req));
             } else
             {
                 edt_name.setError(null);
@@ -201,10 +201,10 @@ public class Fragment_Register extends Fragment {
 
             if (TextUtils.isEmpty(m_phone))
             {
-                edt_phone.setError("Phone number is required");
+                edt_phone.setError(getString(R.string.phone_req));
             }else if (!edt_check_phone.isValid())
             {
-                edt_phone.setError("Invalid Phone number");
+                edt_phone.setError(getString(R.string.inv_phone));
 
             }
             else
@@ -217,7 +217,7 @@ public class Fragment_Register extends Fragment {
             {
                 if (!Patterns.EMAIL_ADDRESS.matcher(m_email).matches())
                 {
-                    edt_email.setError("Invalid email");
+                    edt_email.setError(getString(R.string.inv_email));
                 }else
                 {
                     edt_email.setError(null);
@@ -227,7 +227,7 @@ public class Fragment_Register extends Fragment {
 
             if (TextUtils.isEmpty(city_id))
             {
-                tv_city.setError("City is required");
+                tv_city.setError(getString(R.string.city_req));
             }else
             {
                 tv_city.setError(null);
@@ -235,10 +235,10 @@ public class Fragment_Register extends Fragment {
             }
             if (TextUtils.isEmpty(m_password))
             {
-                edt_password.setError("Password is required");
+                edt_password.setError(getString(R.string.password_req));
             }else if (m_password.length()<5)
             {
-                edt_password.setError("Password is to short minimum 5 characters");
+                edt_password.setError(getString(R.string.pass_short));
 
             }else
             {

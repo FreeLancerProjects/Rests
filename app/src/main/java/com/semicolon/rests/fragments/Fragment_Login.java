@@ -59,7 +59,7 @@ public class Fragment_Login extends Fragment {
             if (TextUtils.isEmpty(m_email))
             {
 
-                edt_email.setError("Phone number or email is required");
+                edt_email.setError(getString(R.string.phone_email_req));
             }else
 
             {
@@ -70,7 +70,7 @@ public class Fragment_Login extends Fragment {
 
             if (TextUtils.isEmpty(m_password))
             {
-                edt_password.setError("Password is required");
+                edt_password.setError(getString(R.string.password_req));
             }else
             {
                 edt_password.setError(null);

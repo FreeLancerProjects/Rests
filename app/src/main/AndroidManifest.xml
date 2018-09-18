@@ -23,7 +23,8 @@
         <activity android:name=".activities.TermsActivity" />
         <activity android:name=".activities.ContactActivity" />
         <activity android:name=".activities.BankActivity" />
-        <activity android:name=".activities.SupportActivity"></activity>
+        <activity android:name=".activities.SupportActivity" />
+        <activity android:name=".activities.WebActivity"></activity>
     </application>
 
 </manifest>

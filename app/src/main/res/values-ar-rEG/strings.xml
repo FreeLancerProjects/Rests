@@ -26,5 +26,25 @@
     <string name="technical_support">الدعم الفني</string>
     <string name="subject">الموضوع</string>
     <string name="message">الرسالة</string>
+    <string name="instagram">انستغرام</string>
+    <string name="facebook">فيس بوك</string>
+    <string name="twitter">تويتر</string>
+    <string name="whatsapp">واتس اب</string>
+    <string name="pls_install_wapp">قم بتحميل تطبيق الواتس اب.</string>
+    <string name="gmail">البريد الالكتروني</string>
+    <string name="wait">انتظر قليلا...</string>
+    <string name="sending">جار الارسال...</string>
+    <string name="send_succ">تم الارسال بنجاح</string>
+    <string name="name_req">الاسم مطلوب</string>
+    <string name="email_req">البريد الاكتروني مطلوب</string>
+    <string name="inv_email">البريد الالكتوني غير صحيح</string>
+    <string name="subject_req">الموضوع مطلوب</string>
+    <string name="msg_req">الرسالة مطلوبة</string>
+    <string name="phone_email_req">رقم الجوال او البريد الالكتروني مطلوب</string>
+    <string name="password_req">كلمة المرور مطلوبة</string>
+    <string name="phone_req">رقم الجوال مطلوب</string>
+    <string name="inv_phone">رقم الجوال غير صحيح</string>
+    <string name="city_req">المدينة مطلوبة</string>
+    <string name="pass_short">كلمة المرور قصيرة جدا</string>
 
 </resources>
