@@ -70,13 +70,12 @@
         android:scrollbars="none"
         android:layout_marginTop="10dp"
         >
-        <TextView
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyc_banks"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            />
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
     </ScrollView>
 </LinearLayout>

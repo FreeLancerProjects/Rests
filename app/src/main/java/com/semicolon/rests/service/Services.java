@@ -1,8 +1,10 @@
 package com.semicolon.rests.service;
 
+import com.semicolon.rests.models.BanksModel;
 import com.semicolon.rests.models.CityModel;
 import com.semicolon.rests.models.ResponsModel;
 import com.semicolon.rests.models.SocialContactModel;
+import com.semicolon.rests.models.TermsModel;
 
 import java.util.List;
 
@@ -17,6 +19,15 @@ public interface Services {
     @GET("AppUser/Cites")
     Call<List<CityModel>> getCity();
 
+
+    @GET("AppUser/TermsAndConditions")
+    Call<TermsModel> getTermsAndConditions();
+
+
+    @GET("AppUser/Banks")
+    Call<List<BanksModel>> getBanks();
+
+
     @GET("AboutApp/SocialMedia")
     Call<SocialContactModel> getContacts();
 
@@ -25,6 +36,5 @@ public interface Services {
     Call<ResponsModel> sendProblemViaContact(@Field("name") String name,
                                              @Field("email") String email,
                                              @Field("subject") String subject,
-                                             @Field("message") String message
-                                             );
+                                             @Field("message") String messag);
 }

@@ -46,5 +46,9 @@
     <string name="inv_phone">رقم الجوال غير صحيح</string>
     <string name="city_req">المدينة مطلوبة</string>
     <string name="pass_short">كلمة المرور قصيرة جدا</string>
+    <string name="account_name">اسم الحساب</string>
+    <string name="account_IBAN">الرقم الخاص</string>
+    <string name="account_bank_name">اسم البنك</string>
+    <string name="account_number">رقم الحساب</string>
 
 </resources>
