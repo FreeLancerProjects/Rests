@@ -3,8 +3,8 @@
     android:id="@+id/linearresponse"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/ed_bg"
     android:orientation="vertical">
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,8 +17,8 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="@color/gray5"
+            android:layout_weight="1.5"
+            android:background="@drawable/login_btn"
             android:gravity="center"
             android:paddingRight="5dp"
             android:text="@string/account_name"
@@ -30,23 +30,14 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="2"
-            android:background="#fff"
+            android:background="@drawable/edt_contact"
             android:gravity="center_vertical"
             android:paddingRight="5dp"
-            android:textColor="@color/gray5"
+            android:textColor="@drawable/login_btn"
             android:textSize="14sp" />
 
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@color/white"
-        />
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,8 +51,8 @@
 
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="@color/gray5"
+            android:layout_weight="1.5"
+            android:background="@drawable/login_btn"
             android:gravity="center"
             android:paddingRight="5dp"
             android:textColor="@color/white"
@@ -74,36 +65,29 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="2"
-            android:background="#fff"
+            android:background="@drawable/edt_contact"
             android:gravity="center_vertical"
             android:paddingRight="5dp"
-            android:textColor="@color/gray5"
+            android:textColor="@drawable/login_btn"
             android:textSize="14sp" />
 
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:background="@color/white"
-        android:paddingRight="5dp" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="@color/gray5"
+            android:layout_weight="1.5"
+            android:background="@drawable/login_btn"
             android:gravity="center"
             android:paddingRight="5dp"
             android:text="@string/account_bank_name"
@@ -115,25 +99,14 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="2"
-            android:background="#fff"
-            android:gravity="center_vertical"
+            android:background="@drawable/edt_contact"
+            android:gravity="center"
             android:paddingRight="5dp"
-            android:textColor="@color/gray5"
+            android:textColor="@drawable/login_btn"
             android:textSize="14sp" />
 
 
     </LinearLayout>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-
-        android:background="@color/white"
-        android:paddingRight="5dp" />
-
 
     <LinearLayout
         android:layout_marginTop="5dp"
@@ -141,13 +114,14 @@
         android:layout_height="40dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"
-            android:background="@color/gray5"
+            android:layout_weight="1.5"
+            android:background="@drawable/login_btn"
             android:gravity="center"
             android:paddingRight="5dp"
             android:text="@string/account_number"
@@ -159,22 +133,14 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_weight="2"
-            android:background="#fff"
+            android:background="@drawable/edt_contact"
             android:gravity="center_vertical"
             android:paddingRight="5dp"
-            android:textColor="@color/gray5"
+            android:textColor="@drawable/login_btn"
             android:textSize="14sp" />
 
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-
-        android:background="@color/white"
-        android:paddingRight="5dp" />
 
 </LinearLayout>
