@@ -68,7 +68,6 @@
         android:fillViewport="true"
         android:fitsSystemWindows="true"
         android:scrollbars="none"
-        android:layout_marginTop="10dp"
         >
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyc_banks"

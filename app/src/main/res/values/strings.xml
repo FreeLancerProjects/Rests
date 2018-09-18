@@ -44,9 +44,9 @@
     <string name="inv_phone">Invalid Phone number</string>
     <string name="city_req">City is required</string>
     <string name="pass_short">Password is to short minimum 5 characters</string>
-    <string name="account_name">account_name</string>
-    <string name="account_IBAN">account_IBAN</string>
-    <string name="account_bank_name">account_bank_name</string>
-    <string name="account_number">account_number</string>
+    <string name="account_name">account name</string>
+    <string name="account_IBAN">account IBAN</string>
+    <string name="account_bank_name">account bank name</string>
+    <string name="account_number">account number</string>
 
 </resources>
