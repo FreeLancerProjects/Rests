@@ -20,11 +20,11 @@ public interface Services {
     Call<List<CityModel>> getCity();
 
 
-    @GET("AppUser/TermsAndConditions")
+    @GET("AboutApp/TermsAndConditions")
     Call<TermsModel> getTermsAndConditions();
 
 
-    @GET("AppUser/Banks")
+    @GET("AboutApp/Banks")
     Call<List<BanksModel>> getBanks();
 
 
