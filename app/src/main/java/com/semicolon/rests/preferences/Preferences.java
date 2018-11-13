@@ -56,4 +56,6 @@ public class Preferences {
         String session = preferences.getString("session_data","");
         return session;
     }
+
+
 }

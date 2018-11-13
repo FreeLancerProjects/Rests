@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    android:id="@+id/root"
+    android:background="@color/gray0"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/bottom_sheet_image_back"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back_arrow"
+            android:padding="18dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="@string/trans"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edt_contact"
+                android:drawableStart="@drawable/person_icon"
+                android:hint="@string/name"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                >
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edt_contact"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:drawableStart="@drawable/blue_phone_icon"
+                    android:hint="@string/phone_number"
+                    android:textColorHint="@color/colorPrimary"
+                    android:singleLine="true"
+                    />
+
+                <com.lamudi.phonefield.PhoneInputLayout
+                    android:id="@+id/edt_check_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+
+                </com.lamudi.phonefield.PhoneInputLayout>
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/edt_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edt_contact"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="8dp"
+                android:drawableStart="@drawable/blue_price_icon"
+                android:hint="@string/money_of_transfer"
+                android:textColorHint="@color/colorPrimary"
+                android:singleLine="true"
+
+
+                />
+            <LinearLayout
+                android:id="@+id/ll_upload_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/upload"
+                    android:padding="9dp"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    android:text="@string/upload_image"
+                    android:textStyle="bold"
+                    android:clickable="false"
+                    android:longClickable="false"
+
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/uploaded_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15sp"
+                android:scaleType="centerCrop"
+
+                />
+
+            <Button
+                android:id="@+id/btn_trans"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/login_btn"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="@string/trns"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

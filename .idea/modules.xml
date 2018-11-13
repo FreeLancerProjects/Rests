@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://G:\android\AndroidStudioProjects\Rests\.idea\Estrahaat.iml" filepath="G:\android\AndroidStudioProjects\Rests\.idea\Estrahaat.iml" />
-      <module fileurl="file://G:\android\AndroidStudioProjects\Rests\Estrahaat.iml" filepath="G:\android\AndroidStudioProjects\Rests\Estrahaat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Estrahaat.iml" filepath="$PROJECT_DIR$/Estrahaat.iml" />
+      <module fileurl="file://G:/android/AndroidStudioProjects/Rests/Estrahaat.iml" filepath="G:/android/AndroidStudioProjects/Rests/Estrahaat.iml" />
+      <module fileurl="file://G:/android/AndroidStudioProjects/Rests/.idea/Estrahaat.iml" filepath="G:/android/AndroidStudioProjects/Rests/.idea/Estrahaat.iml" />
       <module fileurl="file://$PROJECT_DIR$/Rests.iml" filepath="$PROJECT_DIR$/Rests.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

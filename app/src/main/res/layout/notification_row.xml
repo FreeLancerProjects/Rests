@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="8dp"
+    app:cardBackgroundColor="@color/white"
+    android:id="@+id/card"
+    android:clickable="false"
+    android:longClickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginBottom="5dp"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            >
+            <FrameLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/user_profile"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:scaleType="centerCrop"
+                    />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Name"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    />
+                <TextView
+                    android:id="@+id/tv_not_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray3"
+                    android:textSize="14sp"
+                    android:text="asssd"
+                    android:layout_marginTop="5dp"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

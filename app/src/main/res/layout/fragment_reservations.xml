@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ProgressBar
+        android:id="@+id/proBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/tv_no_reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/no_reserv"
+        android:visibility="gone"
+        />
+</FrameLayout>

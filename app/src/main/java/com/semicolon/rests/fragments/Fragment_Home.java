@@ -37,9 +37,9 @@ public class Fragment_Home extends Fragment {
         adapter.AddFragment(Fragment_Shalehat.getInstance());
         adapter.AddFragment(Fragment_Kosor.getInstance());
 
-        adapter.AddTitle("إستراحات");
-        adapter.AddTitle("شاليهات");
-        adapter.AddTitle("قصور افراح");
+        adapter.AddTitle(getString(R.string.estrahat));
+        adapter.AddTitle(getString(R.string.shalehat));
+        adapter.AddTitle(getString(R.string.kosor_afrah));
         pager.setAdapter(adapter);
 
 

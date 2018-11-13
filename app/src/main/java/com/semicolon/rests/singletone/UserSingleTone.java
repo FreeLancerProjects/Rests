@@ -25,4 +25,9 @@ public class UserSingleTone {
     public UserModel getUserModel() {
         return userModel;
     }
+
+    public void clearUserData()
+    {
+        this.userModel=null;
+    }
 }

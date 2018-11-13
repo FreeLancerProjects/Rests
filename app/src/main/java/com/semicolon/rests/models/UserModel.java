@@ -18,6 +18,12 @@ public class UserModel implements Serializable {
     private String user_neighborhood;
     private String city_title;
     private int success_signup;
+    private int success_login;
+    private int success_update;
+    private int success_update_pass;
+
+
+
 
     public String getUser_id() {
         return user_id;
@@ -79,4 +85,15 @@ public class UserModel implements Serializable {
         return success_signup;
     }
 
+    public int getSuccess_login() {
+        return success_login;
+    }
+
+    public int getSuccess_update() {
+        return success_update;
+    }
+
+    public int getSuccess_update_pass() {
+        return success_update_pass;
+    }
 }

@@ -10,6 +10,9 @@
     <color name="white">#ffffff</color>
     <color name="notf">#ffc006</color>
     <color name="transparent">#00000000</color>
+    <color name="redd">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="yellow">#ffc000</color>
 
     <color name="gray1">#f0f0f0</color>
     <color name="gray2">#fafafa</color>
