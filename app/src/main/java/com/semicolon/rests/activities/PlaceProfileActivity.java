@@ -107,11 +107,13 @@ public class PlaceProfileActivity extends AppCompatActivity implements DatePicke
 
     private void CreateDateDialog() {
         Calendar calendar = Calendar.getInstance();
+        calendar.setTime(new Date());
         datePickerDialog = DatePickerDialog.newInstance
                 (this,
                         calendar.get(Calendar.YEAR)
                         ,calendar.get(Calendar.MONTH),
                         calendar.get(Calendar.DAY_OF_MONTH));
+        datePickerDialog.setMinDate(calendar);
 
         datePickerDialog.setAccentColor(ContextCompat.getColor(this,R.color.colorPrimary));
         datePickerDialog.setVersion(DatePickerDialog.Version.VERSION_2);
